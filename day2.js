@@ -48,6 +48,6 @@ let end = 10;
 // console.log("2 * 3 =",number*3);
 // console.log("2 * 4 =",number*4);
 
-for (let i = 1; i <= end; i++) {
-    console.log("2 * ",i , "=",number * i);
+for (let index = 1; index <= end; index++) {
+    console.log("2 * ",index, "=",number * index);
 }
