@@ -48,6 +48,14 @@ let end = 10;
 // console.log("2 * 3 =",number*3);
 // console.log("2 * 4 =",number*4);
 
-for (let index = 1; index <= end; index++) {
+for (let index = 1; index < 2; index++) {
     console.log("2 * ",index, "=",number * index);
 }
+
+// for (Intialize ; Condition; increment) {
+//    Body
+// }
+// 1. Intialize
+// 2. Condition
+// 3. Body
+// 4. increment
