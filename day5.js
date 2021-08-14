@@ -57,6 +57,6 @@
 // let newArr = arr.sort();
 // console.log("Sorted Array", newArr);
 
-let names = ['Ahmed','Arfat',"Wajid"];
+// let names = ['Ahmed','Arfat',"Wajid"];
 
-console.log(names.join(' --> '));
+// console.log(names.join(' --> '));
