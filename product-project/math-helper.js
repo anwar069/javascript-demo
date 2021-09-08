@@ -40,3 +40,55 @@ export const printDiscountBill = function (p) {
     printBill(amount);
 
 };
+
+export const maxOfTwo = function (a, b) {
+    if (a > b) {
+        return a
+    }
+    return c
+}
+
+export const maxOfThree = function (a, b, c) {
+    if (a > b && a > c) {
+        return a
+    }
+    if (b > a && b > c) {
+        return b
+    }
+    return c
+}
+
+export const max = function () {
+    let params = arguments;
+    // console.log(params);
+    let maxNum = 0;
+
+    for (let index = 0; index < params.length; index++) {
+        const num = params[index];
+        if (num > maxNum) {
+            maxNum = num;
+        }
+    }
+    return maxNum
+}
+
+export const min = function () {
+    let params = arguments;
+    // console.log(params);
+    let minNum = Infinity;
+
+    for (let index = 0; index < params.length; index++) {
+
+        const num = params[index];
+        console.log(index, "num", num, "min", minNum)
+
+        if (num < minNum) {
+            minNum = num;
+        }
+
+    }
+    return minNum
+}
+
+
+
