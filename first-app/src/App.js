@@ -1,7 +1,9 @@
 
 import CounterComponent from "./CounterComponent.js";
+import Test from "./Test.js";
 import { useState } from "react";
-import './App.css'
+import './App.css';
+import Button from "./Button.js";
 
 function App() {
   const [arr, setArr] = useState([]);
@@ -17,9 +19,12 @@ function App() {
     setName(e.target.value)
   };
 
+  const mapper = (e) => {
+    return <CounterComponent name={e} />
+  }
+
   return (
     <div className="App">
-
       <div className="headdiv">
         <input placeholder="Enter name" onChange={handleChange} type="text" />
         <button className="addbtn" onClick={handleAdd} > Add Counter</button >
@@ -27,10 +32,7 @@ function App() {
 
       <div className="bodydiv">
         {
-          arr.map((e) => {
-            return <CounterComponent name={e} />
-          }
-          )
+          arr.map(mapper)
         }
       </div>
     </div>
