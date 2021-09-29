@@ -40,3 +40,9 @@
 .product-card {
   margin-top: 15px;
 }
+
+.cart {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
