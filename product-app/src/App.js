@@ -22,11 +22,11 @@ function App() {
   }
 
   const checkInCart = (pro) => {
-    if (pro.id === 1) {
-      return true
-    } else {
-      return false
-    }
+    let ind = cart.findIndex(
+      (e) => { return pro.id == e.id }
+    )
+
+    return ind > -1;
   }
 
   const onAddCart = (item) => {
