@@ -11,10 +11,12 @@ function ProductComponent(props) {
                     <Card.Text>
                         <p>Discount : {props.product.discount}</p>
                         <p>In Stock : {props.product.stock}</p>
-                        <p>In Cart : {props.isInCart.toString()}</p>
                     </Card.Text>
-                    {props.isInCart ? <Button
-                        variant="danger">Remove from cart</Button> : <Button
+                    {props.isInCart ?
+                        <Button
+                            onClick={() => { props.onRemoveClick(props.product) }}
+                            variant="danger"
+                        >Remove from cart</Button> : <Button
                             onClick={() => { props.onAddClick(props.product) }}
                             variant="info">Add to cart</Button>
                     }
