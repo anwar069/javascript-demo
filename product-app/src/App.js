@@ -53,7 +53,7 @@ export default function App() {
       <div>
         <Navbar bg="dark" variant="dark">
           <Container>
-            <Link to="/">
+            <Link className="link" to="/">
               <Navbar.Brand>
                 <Row>
                   <Col xs={3}>
@@ -78,7 +78,7 @@ export default function App() {
                 onChange={handleChange} />
             </Col>
             <Col xs={1}>
-              <Link to="/cart">
+              <Link className="link" to="/cart">
                 <p className="cart"> Cart : {cart.length}</p>
               </Link>
             </Col>
@@ -89,7 +89,9 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/cart">
-            <Cart />
+            <Cart
+              cart={cart}
+              onRemoveCart={onRemoveCart} />
           </Route>
           <Route path="/">
             <Home
