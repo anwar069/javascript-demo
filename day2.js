@@ -1,11 +1,11 @@
-// let age=18;
-// let password = 'abd';
-// // { } -> Curly bracket / braces
-// // ( ) -> Parenthesis  / cicul;ar bracket 
-// // [ ] -> Square bracket 
-// if (age >= 18) {
-//     console.log('Voet kar skta hai');
-// }
+let age = 18;
+let password = 'abd';
+// { } -> Curly bracket / braces
+// ( ) -> Parenthesis  / cicul;ar bracket 
+// [ ] -> Square bracket 
+if (age >= 18) {
+    console.log('Voet kar skta hai');
+}
 // // console.log('log 1',age,password);
 // // console.log('log 2',age,password);
 
@@ -52,7 +52,7 @@ let end = 10;
 // console.log("2 * 4 =",number*4);
 
 for (let index = 1; index < 2; index++) {
-    console.log("2 * ",index, "=",number * index);
+    console.log("2 * ", index, "=", number * index);
 }
 
 // for (Intialize ; Condition; increment) {

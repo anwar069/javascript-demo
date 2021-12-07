@@ -7,12 +7,12 @@ let ahmed = {
         city: "Pune"
     },
     isPrime: true,
-    run : function () {
+    run: function () {
         console.log("Ahmed is running");
     },
     getBirthYear: function () {
         let date = new Date;
-        console.log("Ahmed was born in", date.getFullYear()-this.age);
+        console.log("Ahmed was born in", date.getFullYear() - this.age);
     }
 };
 
@@ -32,3 +32,8 @@ console.log(ahmed.getBirthYear());
 // if (ahmed.age > 18 && ahmed.address.city == 'Nagpur') {
 //     console.log(ahmed.name, ahmed.address.city,"me vote kr skta hai");
 // }
+
+let shanu = {
+    name: "shanu",
+    age: 24,
+}

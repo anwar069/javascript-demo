@@ -63,3 +63,51 @@
   margin-top: 0px;
   padding: 20px;
 }
+
+.counterDiv {
+  width: 50%;
+  background-color: blueviolet ;
+  color: white;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  box-shadow: 1px 2px lightseagreen;
+}
+.btnRound { 
+  border-radius: 50px;
+  margin: 10px;
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+.btnPlus{ 
+  background-color:green;
+}
+.btnMinus{ 
+  background-color:red;
+}
+.title{ 
+  width: 40%;
+  display: inline-block;
+  font-size: 20px;
+  overflow: hidden;
+  color: lightgray;
+}
+.count {
+  font-size: 35px;
+  color: lightcyan;
+  margin: 10px;
+}
+.btnReset{
+   background-color: lightsalmon;
+   color: red;
+   float: right;
+   border-radius: 20px;
+   border: 2px solid red;
+}

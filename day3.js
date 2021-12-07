@@ -2,11 +2,17 @@
 // Datatype
 
 
-// let a= '10';
+// let a = '10';
 // let b = 10;
+// let c = true;
+// let d;
+// let e = null;
 
 // console.log("Type of A", typeof a);
 // console.log("Type of B", typeof b);
+// console.log("Type of C", typeof c);
+// console.log("Type of D", typeof d);
+// console.log("Type of E", typeof e);
 
 // console.log("A === B", a===b);
 // console.log("A !== B", a!==b);

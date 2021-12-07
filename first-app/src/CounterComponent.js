@@ -1,7 +1,7 @@
-import './App.css';
+
 import { useState } from "react";
 
-function VoteComponent(prop) {
+function CounterComponent(prop) {
     const [count, setCount] = useState(0);
 
     const handlePlus = () => {
@@ -17,19 +17,14 @@ function VoteComponent(prop) {
     }
 
     return (
-        <div>
-
-
-
-            <span>{prop.name + ' : '}</span>
-            <button onClick={handleMinus}> -</button >
-            <span>{'  ' + count + '  '} </span>
-            <button onClick={handlePlus}> +</button >
-            <button onClick={handleReset}> Reset </button >
-            <br />
-            <br />
+        <div className="counterDiv">
+            <span className="title">{prop.name + ' : '}</span>
+            <button className="btnRound btnMinus" onClick={handleMinus}> -</button >
+            <span className="count">{count}</span>
+            <button className="btnRound btnPlus" onClick={handlePlus}> +</button >
+            <button className="btnReset" onClick={handleReset}> Reset </button >
         </div>
     );
 }
 
-export default VoteComponent;
+export default CounterComponent;
